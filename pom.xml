@@ -16,8 +16,6 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <!--properties节点中设置docker镜像的前缀“springboot”-->
-        <docker.image.prefix>springio</docker.image.prefix>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
@@ -53,8 +51,6 @@
                     <baseImage>java</baseImage>
                     <!--镜像名称以及版本号-->
                     <imageName>demo:0.0.1</imageName>
-                    <!-- docker私服的地址 -->
-                    <!--<dockerHost>http://10.116.18.162:2375</dockerHost>-->
                     <dockerDirectory>src/main/docker</dockerDirectory>
                     <resources>
                         <resource>
